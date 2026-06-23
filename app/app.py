@@ -9,7 +9,7 @@ from pypdf import PdfReader, PdfWriter, Transformation
 from PIL import Image
 import io
 
-from models import db, User, Document, AuditLog
+from .models import db, User, Document, AuditLog
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'dev-secret-key'
